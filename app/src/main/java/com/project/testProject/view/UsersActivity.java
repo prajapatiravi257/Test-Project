@@ -37,6 +37,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Objects;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -71,7 +72,7 @@ public class UsersActivity extends AppCompatActivity implements SwipeRefreshLayo
         super.onCreate(savedInstanceState);
         setTheme(R.style.AppTheme);
         setContentView(R.layout.activity_users);
-
+        Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.user_activity);
         ButterKnife.bind(this);
         apiService = ApiClient.getClient(getApplicationContext()).create(ApiService.class);
 

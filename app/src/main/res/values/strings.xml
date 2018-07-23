@@ -1,4 +1,6 @@
 <resources>
-    <string name="app_name">Test</string>
-    <string name="title_activity_maps">Map</string>
+    <string name="app_name">Test Project</string>
+    <string name="title_activity_maps">Address Location</string>
+    <string name="detail_activity">Customer Details</string>
+    <string name="user_activity">List of customers</string>
 </resources>
